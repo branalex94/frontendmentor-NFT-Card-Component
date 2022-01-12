@@ -120,6 +120,10 @@ body {
   color: #fff;
 }
 
+.attribution {
+  color: #fff;
+}
+
 @media (min-width: 376px) and (max-width: 1440px) {
   .wrapper {
     min-width: 1rem;
