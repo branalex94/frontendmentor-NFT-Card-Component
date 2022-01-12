@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --background-color: hsl(217, 54%, 11%);
+  --card-background: hsl(216, 50%, 16%);
+  --text-color: hsl(215, 51%, 70%);
+  --ethereum-price-color: hsl(178, 100%, 50%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  min-width: 80vw;
+  min-height: 100vh;
+  margin: 3rem 1.5rem 1.5rem;
+  background: var(--card-background);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.9rem;
+  border-radius: 10px;
+}
+
+.cardImg {
+  width: 100%;
+  height: 240px;
+  border-radius: 10px;
+}
+
+.eyeIcon {
+  display: none;
+}
+
+.topSection,
+.midSection,
+.bottomSection {
+  width: 90%;
+}
+
+.midSection h2 {
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.midSection p {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.midBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftText,
+.rightText {
+  display: flex;
+  align-items: center;
+}
+
+.leftText {
+  color: var(--ethereum-price-color);
+}
+
+.rightText {
+  color: var(--text-color);
+}
+
+.iconImg {
+  padding-right: 10px;
+}
+
+.bottomSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatarIcon {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  flex-shrink: 1;
+}
+
+.bottomSection p {
+  color: var(--text-color);
+  text-align: center;
+  flex-grow: 2;
+}
+
+.underline {
+  width: 280px;
+  height: 1px;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  position: absolute;
+  top: -10px;
+  left: -5px;
+}
+
+.whiteText {
+  color: #fff;
+}
+
+@media (min-width: 376px) and (max-width: 1440px) {
+  .wrapper {
+    min-width: 1rem;
+    width: 20rem;
+  }
+
+  .topSection {
+    position: relative;
+  }
+
+  .cardImg {
+    height: 300px;
+    object-fit: fill;
+  }
+
+  .topSection:hover .eyeContainer,
+  .eyeIcon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .eyeContainer {
+    display: none;
+    position: absolute;
+    height: 300px;
+    width: 260px;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background: rgba(0, 255, 248, 0.6);
+    border-radius: 10px;
+  }
+
+  .eyeIcon {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background: transparent;
+  }
+
+  .midSection h2:hover,
+  .whiteText:hover {
+    color: var(--ethereum-price-color);
+    cursor: pointer;
+  }
+}
