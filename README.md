@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](.images\Frontendmentor NFT card component finished challenge.png)
+![](./images/Frontendmentor NFT card component finished challenge.png)
 
 ### Links
 
