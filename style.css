@@ -19,11 +19,12 @@ body {
   align-content: center;
   justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 
 .wrapper {
   min-width: 80vw;
-  min-height: 100vh;
+  min-height: 80%;
   margin: 3rem 1.5rem 1.5rem;
   background: var(--card-background);
   display: flex;
@@ -124,10 +125,12 @@ body {
   color: #fff;
 }
 
-@media (min-width: 376px) and (max-width: 1440px) {
+@media (min-width: 376px) {
   .wrapper {
     min-width: 1rem;
     width: 20rem;
+    max-height: 100vh;
+    min-height: 600px;
   }
 
   .topSection {
