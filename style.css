@@ -52,7 +52,7 @@ body {
   width: 90%;
 }
 
-.midSection h2 {
+.midSection h1 {
   color: #fff;
   margin-bottom: 25px;
 }
@@ -153,7 +153,6 @@ body {
     position: absolute;
     height: 300px;
     width: 260px;
-    z-index: 10;
     top: 0;
     left: 0;
     background: rgba(0, 255, 248, 0.6);
@@ -167,7 +166,7 @@ body {
     background: transparent;
   }
 
-  .midSection h2:hover,
+  .midSection h1:hover,
   .whiteText:hover {
     color: var(--ethereum-price-color);
     cursor: pointer;
